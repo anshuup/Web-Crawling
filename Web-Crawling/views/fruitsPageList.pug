@@ -1,0 +1,19 @@
+html
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible' content='IE=edge')
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		title Lab1
+		body
+		a(href ="/fruits") Back to Search
+		br
+		br
+		br
+		each item in array
+			div Page Title : #{item.title}  Page Score : #{item.searchScore}  Page Rank : #{item.pageRank}
+			a(href = "http://localhost:3000/fruitsList/" + item.title) Retrieved Info #{item.title}
+			br
+			a(href = item.url target="_blank") #{item.url}
+			br
+			br
+		br
